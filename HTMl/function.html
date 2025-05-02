@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> form</title>
+</head>
+<body>
+    <input type="number" name="number1" id="number1">
+    <input type="number" name="number2" id="number2">
+    
+    <select name="option" id="option">
+        <option value="addition">addition</option>
+        <option value="substraction">substraction</option>
+        <option value="multiplication">multiplication</option>
+
+    </select>
+    <input type="button" value="submit" onclick="getinput()">
+    <h1 id="result"></h1>
+    
+ 
+    <script>
+        function getinput () {
+          let number1= parseInt(document.getElementById("number1").value);
+          let number2= parseInt(document.getElementById("number2").value);
+          let option = (document.getElementById("option").value);
+        
+
+
+        if (option=="addition")
+    {       
+        document.getElementById("option");
+        console.log(number1+number2);
+    }
+
+
+         else if (option=="subtraction")
+    {   
+        document.getElementById("option");
+        console.log(number1-number2);
+    }
+
+
+    
+        else if (option == "multiplication")
+    {
+        document.getElementById("option");
+        console.log(number1*number2);
+    }
+
+}// compiled
+      
+        </script>
+
+</body>
+</html>

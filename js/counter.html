@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Example </title>
+</head>
+<body>
+    <h1>Click the button to increment the counter  </h1>
+    <p id="counter"> 0 </p>
+    <button onclick="increment()"> Increment </button>
+    <script>
+        let counter = 0 ;
+        function increment() {
+            counter++;
+            document.getElementById("counter").innerText=counter;
+        }
+    </script>
+    
+</body>
+</html>
